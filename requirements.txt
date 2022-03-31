@@ -7,6 +7,8 @@ gunicorn==20.1.0
 python-dotenv==0.17.1
 six==1.16.0
 Werkzeug==2.0.1
+urllib3==1.25.9
+uwsgi
 absl-py==1.0.0
 
 tensorflow-cpu==2.8.0
