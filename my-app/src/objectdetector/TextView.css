@@ -19,19 +19,19 @@
   width: 200px;
 }
 
-.textview__title::after {
-  display: block;
-  content: "";
-  width: 2px;
-  height: 100%;
+.textview__title:after {
   background-color: #000;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
+  content: "";
+  display: block;
+  height: 70%;
   left: 20%;
   margin-left: 150px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2px;
 }
-
 .textview__description {
   display: block;
   width: 50%;
