@@ -1,22 +1,24 @@
 import "./App.css";
-import { Deploy } from "./Component/Deploy/Deploy";
-import { useState, useEffect } from "react";
+import styled from "styled-components";
+import { ObjectDetector } from "./objectdetector";
+import React from "react";
+const AppContainer = styled.div`
+  padding-bottom: 14px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ece9e6, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+`;
+
 function App() {
-  const [state, setState] = useState({});
-  useEffect(() => {
-    fetch("/api")
-      .then((response) => {
-        if (response.status === 200) {
-          return response.json();
-        }
-      })
-      .then((data) => setState(data))
-      .then((error) => console.log(error));
-  }, []);
   return (
-    <div className="App">
-      <Deploy prop={state} />
-    </div>
+    <AppContainer>
+      <ObjectDetector />
+    </AppContainer>
   );
 }
 

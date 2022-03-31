@@ -1,0 +1,48 @@
+:root {
+  --width-detector: 75%;
+  --width-info: calc(100% - var(--width-detector));
+}
+
+.detector-wrap {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resize {
+  max-height: 270px;
+}
+
+.detector-info {
+  width: var(--width-info);
+  background-image: linear-gradient(to bottom, #f7971e, #ffd200);
+  border-radius: 3px;
+  height: 334px;
+  margin-top: 20px;
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prediction {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.prediction_title {
+  font-size: 22px;
+}
+
+.prediction_result {
+  text-align: center;
+  font-size: 20px;
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+}
