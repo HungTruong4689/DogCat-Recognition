@@ -18,7 +18,7 @@ attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
 autopep8 @ file:///tmp/build/80754af9/autopep8_1615918855173/work
 avro-python3==1.10.2
 Babel @ file:///tmp/build/80754af9/babel_1607110387436/work
-backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+
 backports.functools-lru-cache @ file:///tmp/build/80754af9/backports.functools_lru_cache_1618170165463/work
 backports.shutil-get-terminal-size @ file:///tmp/build/80754af9/backports.shutil_get_terminal_size_1608222128777/work
 backports.tempfile @ file:///home/linux1/recipes/ci/backports.tempfile_1610991236607/work
