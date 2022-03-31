@@ -11,7 +11,7 @@ const TextView = (props) => {
         <span className="textview__description">
           This application was created for the purpose to detect the user's
           image. The goal of the detection is to detect whether cat or dog.
-          Please input a image with one object with the "select image" button.
+          Please input a image with one object by the "select image" button.
         </span>
       </div>
     </div>
