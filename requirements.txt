@@ -1,5 +1,5 @@
 absl-py==1.0.0
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
+
 anaconda-client==1.7.2
 anaconda-navigator==2.0.3
 anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
@@ -114,11 +114,11 @@ holidays==0.12
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
 httplib2==0.19.1
 ibm-cloud-sdk-core==3.15.0
-ibm-watson==5.3.1
+
 idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
 imagecodecs @ file:///C:/ci/imagecodecs_1617996768495/work
 imageio @ file:///tmp/build/80754af9/imageio_1617700267927/work
-imagesize @ file:///home/ktietz/src/ci/imagesize_1611921604382/work
+
 importlib-metadata==4.10.1
 importlib-resources==5.4.0
 imutils==0.5.4
