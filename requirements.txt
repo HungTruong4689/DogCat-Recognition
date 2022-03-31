@@ -17,7 +17,7 @@ Keras-Preprocessing==1.1.2
 numpy==1.22.3
 
 
-Pillow @ file:///C:/ci/pillow_1617386341487/work
+Pillow==2.6.1
 
 
 
