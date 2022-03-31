@@ -66,7 +66,7 @@ export function ObjectDetector() {
     const config = {
       headers: { "content-type": "multipart/form-data" },
     };
-    const url = "http://127.0.0.1:5000/loadimage";
+    const url = "https://sheltered-fortress-19231.herokuapp.com/loadimage";
     await axios
       .post(url, formData, config)
       .then((response) => {
