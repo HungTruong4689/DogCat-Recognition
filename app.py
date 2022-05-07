@@ -64,17 +64,6 @@ def load_image():
     if not file:
         return
 
-    #img_bytes = str(file)
-    # if "data:image/jpeg;base64," in img_bytes:
-    #     img_bytes = img_bytes.replace("data:image/jpeg;base64,", "")
-    #     #img = Image.open(BytesIO(base64.b64decode(img_bytes)))
-    # elif "data:image/png;base64," in img_bytes:
-    #     img_bytes = img_bytes.replace("data:image/png;base64,", "")
-        #img = Image.open(BytesIO(base64.b64decode(img_bytes)))
-    #else:
-        #response = requests.get(img_bytes)
-        #img = Image.open(BytesIO(base64.b64decode(img_bytes)))
-    #img = prepare_image2(img_bytes)
     img_bytes = re.sub('^data:image/.+;base64,', '', file)
     img = base64.b64decode(img_bytes)
     img = Image.open(io.BytesIO(img))
@@ -86,7 +75,7 @@ def load_image():
     prediction, score = predict_result(img)
     score = round(score,4)
     return _corsify_actual_response(jsonify(prediction=prediction,score=str(score)))
-    #return jsonify(result=img.shape)
+
 
 
 @app.route('/api',methods=['GET'])

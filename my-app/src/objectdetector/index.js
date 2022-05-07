@@ -47,13 +47,12 @@ const SelectButton = styled.button`
 
 export function ObjectDetector() {
   const fileInputRef = useRef();
-  //   const imageRef = useRef();
+
   const [imgData, setImgData] = useState(null);
   const [predictions, setPredictions] = useState();
-  //const [isLoading, setLoading] = useState(false);
+
   const [score, setscore] = useState(0);
-  //const isEmptyPredictions = !predictions || predictions.length === 0;
-  //console.log(predictions);
+
   const openFilePicker = () => {
     if (fileInputRef.current) fileInputRef.current.click();
   };
@@ -80,15 +79,6 @@ export function ObjectDetector() {
       .catch((error) => {
         console.log(error);
       });
-    // const response = await fetch("http://127.0.0.1:5000/loadimage", {
-    //   method: "POST",
-    //   body: JSON.stringify(img),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // });
-    // const data = await response.json();
-    // console.log(data);
   }
 
   const readImage = (file) => {
@@ -101,27 +91,15 @@ export function ObjectDetector() {
   };
 
   const onSelectImage = async (e) => {
-    //   setPredictions([]);
-    //   setLoading(true);
-
     const file = e.target.files[0];
     const imgData = await readImage(file);
     setImgData(imgData);
-    //await detectObjectsOnImage(imgData);
+
     const imageElement = document.createElement("img");
     imageElement.src = imgData;
-    //await detectObjectsOnImage(imgData);
-    imageElement.onload = async () => {
-      //   const imgSize = {
 
-      //     width: imageElement.width,
-      //     height: imageElement.height,
-      //   };
-      //console.log(imageElement);
-      //console.log(imgData);
+    imageElement.onload = async () => {
       await detectObjectsOnImage(imgData);
-      //console.log(predictions);
-      //setLoading(false);
     };
   };
   //console.log(predictions);
